@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #2a2a2a;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.home {
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  height: 100%;
+  background: url("images/home-background.jpg") no-repeat;
+}
+
+h2 {
+  font-family: Orbitron, sans-serif;
+  font-size: 40px;
+  padding: 10px;
+  color: #d2ac47;
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+.title {
+  width: 250px;
+}
+
+.topnav {
+  font-family: Orbitron, sans-serif;
+  width: 100%;
+  background: linear-gradient(90deg, #d2ac47 0%, #ffc107 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.pilots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.pilot-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #d2ac47;
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 0 15px rgba(210, 172, 71, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links a {
+  color: #d2ac47;
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+.pilot-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.pilot-card strong {
+  font-family: "Orbitron", sans-serif;
+  color: #ffd700;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #1a1a1a;
+  color: #ffd700;
+}
+
+.home-header {
+  font-family: Bebas Neue, sans-serif;
+  font-size: 100px;
+  color: white;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.description-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 40px;
+}
+
+.description-background p {
+  margin-left: 20px;
+  width: 80%;
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+}
+
+table {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  border-collapse: collapse;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(210, 172, 71, 0.4);
+}
+
+th,
+td {
+  padding: 15px 20px;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+
+th {
+  background: #d2ac47;
+  color: #1a1a1a;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+form {
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(210, 172, 71, 0.2);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 2px solid #d2ac47;
+}
+
+form label {
+  font-weight: 600;
+  color: #ffd700;
+  font-family: "Orbitron", sans-serif;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border: 1px solid #d2ac47;
+  background-color: #2a2a2a;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #d2ac47;
+  color: #1a1a1a;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background-color: #ffc107;
+  transform: scale(1.03);
+}
